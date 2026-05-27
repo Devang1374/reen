@@ -20,6 +20,9 @@ use App\Models\heroBanner;
 */
 
 Route::get('/', [homeController::class, 'index']);
+Route::get('/contact',[homeController::class, 'contact']);
+
+Route::post('sendFeedBack',[homeController::class, 'sendFeedBack'])->name('sendFeedBack');
 
 Route::middleware(['auth', 'verified'])->group(function(){
     Route::get('/heroBanner', [heroController::class,'heroBanner'])->name('heroBanner');
