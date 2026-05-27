@@ -123,7 +123,7 @@
         <!-- latest works end -->
 
         <!-- get in touch -->
-        <div class="get-in-touch main-section">
+        <div id="contact" class="get-in-touch main-section">
             <div class="container">
                 <div class="get-in-touch-wrapper">
                     @php

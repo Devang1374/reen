@@ -32,6 +32,8 @@ class homeController extends Controller
             'message' => 'required|min:10',
         ]);
 
-         Mail::to('vagheladevang123@gmail.com')->send(new contactMail($validated));
+         if(Mail::to('vagheladevang123@gmail.com')->send(new contactMail($validated))){
+            return back()->with("success","Thank You For Message!");
+         }
     }
 }

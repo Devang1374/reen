@@ -173,3 +173,8 @@ function subscribe() {
         }
     }
 }
+
+function closeMsgBox(){
+    let msgBox = document.querySelector(".message-box");
+    msgBox.style.display = "none";
+}

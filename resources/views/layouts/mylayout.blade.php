@@ -81,7 +81,7 @@
     @yield('content')
 
     @section('footer')
-    <div id="contact" class="footer">
+    <div class="footer">
         <div class="top-footer">
             <div class="container">
                 <div class="about-us">

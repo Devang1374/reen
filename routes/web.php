@@ -22,6 +22,8 @@ use App\Models\heroBanner;
 Route::get('/', [homeController::class, 'index']);
 Route::get('/contact',[homeController::class, 'contact']);
 
+Route::view('/test','emails.contact');
+
 Route::post('sendFeedBack',[homeController::class, 'sendFeedBack'])->name('sendFeedBack');
 
 Route::middleware(['auth', 'verified'])->group(function(){
